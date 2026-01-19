@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import FadeInSection from "./fade-in-section";
 
 interface Testimonial {
@@ -164,16 +165,17 @@ export default function TestimonialsSection() {
 
                         {/* Quote */}
                         <p className="text-[#000000] text-base leading-relaxed mb-8 flex-grow">
-                          "{testimonial.quote}"
+                          &ldquo;{testimonial.quote}&rdquo;
                         </p>
 
                         {/* Author Info */}
                         <div className="flex items-center gap-4">
-                          <div className="w-14 h-14 rounded-full overflow-hidden bg-gray-300 flex-shrink-0">
-                            <img
+                          <div className="w-14 h-14 rounded-full overflow-hidden bg-gray-300 flex-shrink-0 relative">
+                            <Image
                               src={testimonial.image}
                               alt={testimonial.name}
-                              className="w-full h-full object-cover"
+                              fill
+                              className="object-cover"
                             />
                           </div>
                           <div>

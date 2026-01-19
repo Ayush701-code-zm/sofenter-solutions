@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import FadeInSection from "./fade-in-section";
 
 interface Technology {
@@ -103,11 +104,13 @@ export default function ExpertiseSection() {
                           key={tech.name}
                           className="flex flex-col items-center gap-2 p-3 rounded-lg hover:bg-gray-200 transition-all duration-300 group cursor-pointer"
                         >
-                          <div className="w-10 h-10 flex items-center justify-center bg-white rounded-lg p-2 shadow-sm">
-                            <img
+                          <div className="w-10 h-10 flex items-center justify-center bg-white rounded-lg p-2 shadow-sm relative">
+                            <Image
                               src={tech.icon}
                               alt={tech.name}
-                              className="w-full h-full object-contain"
+                              fill
+                              className="object-contain p-1"
+                              unoptimized
                             />
                           </div>
                           <span className="text-[#000000] text-xs font-medium text-center leading-tight">
