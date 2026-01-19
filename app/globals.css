@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom container classes */
+@layer components {
+  .light-container {
+    @apply bg-[rgba(242,240,245,0.5)] backdrop-blur-sm rounded-3xl;
+  }
+
+  .light-container-bottom {
+    @apply bg-[rgba(242,240,245,0.5)] backdrop-blur-sm rounded-b-3xl;
+  }
+
+  /* Folder/file styles */
+  .folder {
+    @apply cursor-pointer transition-transform hover:scale-105;
+  }
+
+  /* Scrollbar hiding */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-[#000000];
+  }
+}
