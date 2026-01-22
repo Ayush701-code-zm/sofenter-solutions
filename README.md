@@ -66,8 +66,6 @@ npm run dev
 └── tsconfig.json         # TypeScript configuration
 ```
 
-## 🎨 Coding Standards
-
 This project follows comprehensive coding standards covering:
 
 ### Tailwind CSS Patterns
