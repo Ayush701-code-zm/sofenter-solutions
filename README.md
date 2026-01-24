@@ -1,4 +1,4 @@
-# Glamsfyt Project
+ 
 
 A Next.js project following comprehensive coding standards and patterns.
 
