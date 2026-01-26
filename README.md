@@ -7,7 +7,6 @@ A Next.js project following comprehensive coding standards and patterns.
 ### Prerequisites
 
 - Node.js 18+ 
-- npm or yarn
 
 ### Installation
 
